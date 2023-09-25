@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: url("c3953485dc9be497b8ef61d39c3ab9af.jpg");
+    -o-object-fit: fill;
+       object-fit: fill;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .screen {
+    width: 99vw;
+    max-width: 420px;
+    height: 95vh;
+    /* border: 2px solid white; */
+  }
+
+
+  .top {
+    display: flex;
+    width: 100%;
+    height: 220px;
+    background-color: transparent;
+    border-radius: 50px;
+    position: relative;
+    top: -50px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+  .logo {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    top: 40px;
+    left: 90px;
+
+    
+  }
+  .title {
+    position: relative;
+    color: #FFB822;
+    top: -70px;
+    left: -90px;
+    /* text-align: center; */
+    /* transform: translate(30%, 10%); */
+  }
+ .title h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5em;
+    margin: 0px auto;
+    line-height: 45px;
+  }
+  .title h6 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.0em;
+  }
+
+
+  .circle {
+    width: 500px;
+    height: 500px;
+    background-color: #002352;
+    border-radius: 50%;
+    position: absolute;
+    top: -280px;
+    left: 40px;
+  }
+
+
+  .message_box {
+    margin-top: -50px;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 25px;
+  }
+
+  .message {
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
+    line-height: 25px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .info_box {
+    margin-top: -20px;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 25px;
+  }
+
+
+  .info {
+    font-family: "Inter", sans-serif;
+    font-size: 1.1069rem;
+    line-height: 25px;
+    text-align: justify;
+  }
+
+
+  .jointext {
+    /* width: 230px; */
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
+    line-height: 25px;
+    text-align: center;
+    color: #FFB822;
+
+  }
+
+
+  .pass_container {
+    position: relative;
+    top: -30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .pass {
+
+    width: 90%;
+  }
+
+  .action {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -18px;
+  }
+
+  .action a button {
+    width: 250px;
+    padding: 0.8rem;
+    border-radius: 3300000px;
+    background-color: #FFB822;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: large;
+    font-weight: 700;
+    color: #002352;
+  }
+
+  .socials_container {
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .socials {
+    margin-bottom: 2rem;
+    display: flex;
+    
+    gap: 1rem;
+  }
