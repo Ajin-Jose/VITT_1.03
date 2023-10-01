@@ -79,7 +79,7 @@ const checkBlackFillPercentage = () => {
     // Countdown
     scratchCardText.classList.add('countdown');
     scratchCardText.innerHTML = '🎉 Unlocking your reward ';
-    var timeleft = 5;
+    var timeleft = 3;
     var downloadTimer = setInterval(function(){
         if(timeleft <= 0){
             clearInterval(downloadTimer);
