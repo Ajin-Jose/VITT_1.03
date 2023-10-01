@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+  <h3>Using CSS to style an HTML Form</h3>
+  
+  <div>
+    <form id="myForm">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="Name" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="Password" placeholder="Your last name..">
+    
+      <input type="submit" value="Submit">
+    </form>
+    <div id="message"></div>
+  </div>
+  
+  <script>
+  document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var formData = new FormData(this);
+  
+    fetch('https://script.google.com/macros/s/AKfycbza8ii1Nuh1FPDD_Mnc4bd81p_d0mMrnw15PX1dFeMMN0sxSUrF0yRj06yeZQ-SRxKorw/exec', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+      if (data === 'success') {
+        document.getElementById('message').innerHTML = 'Success!';
+        alert('Success!');
+      } else if (data === 'failure') {
+        document.getElementById('message').innerHTML = 'Failure!';
+        alert('Failure!');
+      } else {
+        document.getElementById('message').innerHTML = 'Unknown response.';
+        alert('Unknown response.');
+      }
+    })
+    .catch(error => {
+      document.getElementById('message').innerHTML = 'Error occurred.';
+      alert('Error occurred.');
+    });
+  });
+  </script>
+  
+  </body>
+</html>
